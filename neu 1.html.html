@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messi vs Ronaldo</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body{
+      background: radial-gradient(circle at top, #2a2a2a, #0f0f0f);
+      color:white;
+      padding:30px;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    header h1{
+      font-size:2.5rem;
+      color:gold;
+      text-shadow:0 0 10px rgba(255,215,0,0.5);
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#bbb;
+      font-size:1.1rem;
+    }
+
+    .container{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background: linear-gradient(145deg, #2f2f2f, #1f1f1f);
+      width:320px;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover{
+      transform: translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:15px;
+      border:2px solid gold;
+    }
+
+    .card h2{
+      color:gold;
+      margin-bottom:15px;
+      letter-spacing:1px;
+    }
+
+    ul{
+      list-style:none;
+      text-align:left;
+    }
+
+    ul li{
+      padding:10px;
+      border-bottom:1px solid #444;
+      font-size:0.95rem;
+    }
+
+    ul li span{
+      color:gold;
+      font-weight:bold;
+    }
+
+    .extra{
+      margin-top:50px;
+      background:#1f1f1f;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.5);
+      text-align:center;
+    }
+
+    .extra h3{
+      color:gold;
+      margin-bottom:10px;
+    }
+
+    footer{
+      margin-top:50px;
+      text-align:center;
+      color:#aaa;
+      font-size:0.95rem;
+    }
+
+    footer span{
+      color:gold;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ Messi vs Ronaldo ⚽</h1>
+    <p>Vergleich von zwei Fußball-Legenden</p>
+  </header>
+
+  <div class="container">
+
+    <!-- MESSI -->
+    <div class="card">
+      <img src="messi.jpg" alt="lionel Messi">
+      <h2>Lionel Messi</h2>
+
+      <ul>
+        <li><span>Goals:</span> 830+</li>
+        <li><span>Assists:</span> 360+</li>
+        <li><span>Trophies:</span> 44</li>
+        <li><span>Teams:</span> Barcelona, PSG, Inter Miami</li>
+        <li><span>Ballon d'Or:</span> 8</li>
+      </ul>
+    </div>
+
+    <!-- RONALDO -->
+    <div class="card">
+      <img src="ronaldo.jpg" alt="cristiano Ronaldo">
+      <h2>Cristiano Ronaldo</h2>
+
+      <ul>
+        <li><span>Goals:</span> 880+</li>
+        <li><span>Assists:</span> 250+</li>
+        <li><span>Trophies:</span> 35</li>
+        <li><span>Teams:</span> Sporting, Man United, Real Madrid, Juventus, Al Nassr</li>
+        <li><span>Ballon d'Or:</span> 5</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="extra">
+    <h3>Eigene Erweiterung</h3>
+    <p>
+      Hier kannst du später weitere Spieler, Statistiken oder Designs hinzufügen.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 Messi vs Ronaldo Website | <span>Najib</span></p>
+  </footer>
+
+</body>
+</html>
