@@ -6,15 +6,17 @@
   <title>Messi vs Ronaldo</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body{
-      background: radial-gradient(circle at top, #2a2a2a, #0f0f0f);
+      background:
+      radial-gradient(circle at top, #2a2a2a, #0f0f0f);
       color:white;
       padding:30px;
     }
@@ -25,9 +27,9 @@
     }
 
     header h1{
-      font-size:2.5rem;
+      font-size:2.8rem;
       color:gold;
-      text-shadow:0 0 10px rgba(255,215,0,0.5);
+      text-shadow:0 0 15px rgba(255,215,0,0.6);
       margin-bottom:10px;
     }
 
@@ -50,11 +52,12 @@
       border-radius:15px;
       text-align:center;
       box-shadow:0 10px 25px rgba(0,0,0,0.6);
-      transition: transform 0.3s ease;
+      transition:0.4s;
     }
 
     .card:hover{
-      transform: translateY(-8px);
+      transform:translateY(-10px);
+      box-shadow:0 0 25px gold;
     }
 
     .card img{
@@ -88,8 +91,109 @@
       font-weight:bold;
     }
 
+    /* STATISTIKEN */
+
+    .stats-section{
+      margin-top:70px;
+      background:#1c1c1c;
+      padding:30px;
+      border-radius:15px;
+      width:90%;
+      margin-left:auto;
+      margin-right:auto;
+      box-shadow:0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .stats-section h2{
+      text-align:center;
+      color:gold;
+      margin-bottom:30px;
+      font-size:2rem;
+    }
+
+    .stat{
+      margin-bottom:25px;
+    }
+
+    .stat p{
+      margin-bottom:8px;
+      font-weight:bold;
+    }
+
+    .bar{
+      padding:12px;
+      border-radius:10px;
+      color:white;
+      margin-bottom:10px;
+    }
+
+    .messi{
+      background:#3498db;
+      width:85%;
+    }
+
+    .ronaldo{
+      background:#f39c12;
+      width:75%;
+    }
+
+    /* TROPHIES */
+
+    .trophies{
+      margin-top:70px;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .trophy-card{
+      background:#1f1f1f;
+      padding:25px;
+      width:250px;
+      border-radius:15px;
+      text-align:center;
+      border:1px solid gold;
+      transition:0.3s;
+    }
+
+    .trophy-card:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 20px gold;
+    }
+
+    .trophy-card h3{
+      color:gold;
+      margin-bottom:15px;
+    }
+
+    /* GALERIE */
+
+    .gallery{
+      margin-top:70px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .gallery img{
+      width:260px;
+      height:180px;
+      object-fit:cover;
+      border-radius:15px;
+      border:2px solid gold;
+      transition:0.4s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    /* EXTRA */
+
     .extra{
-      margin-top:50px;
+      margin-top:70px;
       background:#1f1f1f;
       padding:25px;
       border-radius:12px;
@@ -103,7 +207,7 @@
     }
 
     footer{
-      margin-top:50px;
+      margin-top:60px;
       text-align:center;
       color:#aaa;
       font-size:0.95rem;
@@ -113,6 +217,30 @@
       color:gold;
       font-weight:bold;
     }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .container{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .card{
+        width:90%;
+      }
+
+      .stats-section{
+        width:100%;
+      }
+
+      .gallery img{
+        width:90%;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -126,8 +254,11 @@
   <div class="container">
 
     <!-- MESSI -->
+
     <div class="card">
-      <img src="messi.jpg" alt="lionel Messi">
+
+      <img src="messi.jpg" alt="Lionel Messi">
+
       <h2>Lionel Messi</h2>
 
       <ul>
@@ -137,29 +268,99 @@
         <li><span>Teams:</span> Barcelona, PSG, Inter Miami</li>
         <li><span>Ballon d'Or:</span> 8</li>
       </ul>
+
     </div>
 
     <!-- RONALDO -->
+
     <div class="card">
-      <img src="ronaldo.jpg" alt="cristiano Ronaldo">
+
+      <img src="ronaldo.jpg" alt="Cristiano Ronaldo">
+
       <h2>Cristiano Ronaldo</h2>
 
       <ul>
         <li><span>Goals:</span> 880+</li>
         <li><span>Assists:</span> 250+</li>
         <li><span>Trophies:</span> 35</li>
-        <li><span>Teams:</span> Sporting, Man United, Real Madrid, Juventus, Al Nassr</li>
+        <li><span>Teams:</span> Sporting, Manchester United, Real Madrid, Juventus, Al Nassr</li>
         <li><span>Ballon d'Or:</span> 5</li>
       </ul>
+
     </div>
 
   </div>
 
+  <!-- STATISTIK -->
+
+  <section class="stats-section">
+
+    <h2>Karriere Statistiken</h2>
+
+    <div class="stat">
+      <p>Dribbling</p>
+      <div class="bar messi">Messi 95%</div>
+      <div class="bar ronaldo">Ronaldo 88%</div>
+    </div>
+
+    <div class="stat">
+      <p>Finishing</p>
+      <div class="bar messi">Messi 93%</div>
+      <div class="bar ronaldo">Ronaldo 96%</div>
+    </div>
+
+    <div class="stat">
+      <p>Playmaking</p>
+      <div class="bar messi">Messi 97%</div>
+      <div class="bar ronaldo">Ronaldo 82%</div>
+    </div>
+
+  </section>
+
+  <!-- TROPHÄEN -->
+
+  <section class="trophies">
+
+    <div class="trophy-card">
+      <h3>🏆 Ballon d'Or</h3>
+      <p>Messi: 8</p>
+      <p>Ronaldo: 5</p>
+    </div>
+
+    <div class="trophy-card">
+      <h3>⚽ Champions League</h3>
+      <p>Messi: 4</p>
+      <p>Ronaldo: 5</p>
+    </div>
+
+    <div class="trophy-card">
+      <h3>🌍 Weltmeisterschaft</h3>
+      <p>Messi: 1</p>
+      <p>Ronaldo: 0</p>
+    </div>
+
+  </section>
+
+  <!-- GALERIE -->
+
+  <section class="gallery">
+
+    <img src="messi.jpg">
+    <img src="ronaldo.jpg">
+    <img src="leonel messi.jpg">
+    <img src="cristiano-ronaldo.jpg">
+
+  </section>
+
+  <!-- EXTRA -->
+
   <div class="extra">
-    <h3>Eigene Erweiterung</h3>
+    <h3>everyone's opinions</h3>
+
     <p>
-      Hier kannst du später weitere Spieler, Statistiken oder Designs hinzufügen.
+      the best goats in football history of all time
     </p>
+
   </div>
 
   <footer>
